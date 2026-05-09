@@ -9,11 +9,12 @@ import os
 import sys
 import time
 from dataclasses import dataclass
-from datetime import UTC, date, datetime, timedelta
+from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
 from typing import Iterable, Sequence
 
 
+UTC = timezone.utc
 CSV_FIELDS = [
     "id",
     "started_at_utc",
