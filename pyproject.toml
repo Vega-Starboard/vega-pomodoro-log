@@ -1,0 +1,46 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "vega-pomodoro-log"
+version = "0.1.0"
+description = "Minimalist local Pomodoro timer with CSV logging and iCalendar export."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [
+  { name = "Vega-Starboard" }
+]
+keywords = [
+  "pomodoro",
+  "cli",
+  "time-tracking",
+  "csv",
+  "ics",
+  "local-first",
+  "productivity",
+  "bug-bounty"
+]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Environment :: Console",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3 :: Only",
+  "Topic :: Office/Business :: Scheduling",
+  "Topic :: Utilities"
+]
+dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/Vega-Starboard/vega-pomodoro-log"
+Repository = "https://github.com/Vega-Starboard/vega-pomodoro-log"
+Issues = "https://github.com/Vega-Starboard/vega-pomodoro-log/issues"
+
+[project.scripts]
+vega-pomodoro-log = "vega_pomodoro_log.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
